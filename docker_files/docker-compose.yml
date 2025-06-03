@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  shiny:
+    # M-series Macs: ensure amd64 image just like R template
+    platform: "linux/amd64"
+    build: .
+    ports:
+      - "8000:8000"    # host:container
+    volumes:
+      - .:/app         # optional live-reload while coding
