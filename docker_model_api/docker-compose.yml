@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  model-api:
+    build: .
+    ports:
+      - "8080:8080"           # Host port:container port
+    volumes:
+      - .:/app                # Live reload if you edit model_api.py or data
+    platform: linux/amd64     # Ensures compatibility on M1/M2 Macs
