@@ -3,7 +3,7 @@
 **NOTE:** The app is currently deployed on Google Cloud Run. If you'd like to run the app locally or reproduce the setup, follow the instructions below.
 
 ### Live App (Cloud Run)
-[Click here to launch the app]([https://your-cloud-run-url.com](https://shiny-app-594837701038.us-west1.run.app/))
+[Click here to launch the app](https://shiny-app-594837701038.us-west1.run.app/)
 
 ---
 
