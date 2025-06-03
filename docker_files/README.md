@@ -42,13 +42,11 @@ cd Stat-418-Project/docker_files
 
 # Step 2: Start the container
 docker-compose up
-```
 
 Once the app is running, open your browser and visit:
 http://localhost:8000
 
 To stop and clean up:
-```bash
 docker-compose down
 ```
 
