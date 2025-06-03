@@ -66,6 +66,17 @@ This functionality is delivered through an interactive web app built using R Shi
 ### Sample Output in Shiny App
 <img width="684" alt="image" src="https://github.com/user-attachments/assets/d26960cc-8945-4cdd-a1ee-354986477796" />
 
+## Book Recommendation System
+
+This repository contains:
+
+- `/docker_files/`: A Shiny app frontend that allows users to input a book title and get similar book recommendations.
+- `/docker_model_api/`: A Flask API that serves book recommendations based on a trained k-NN model.
+
+## Deployment Instructions
+
+- See `README.md` in each folder for details on how to build, run, and deploy.
+
 ---
 
 **Copyright**: Setara Nusratty, UCLA MASDS 2024  
