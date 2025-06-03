@@ -2,12 +2,12 @@
 
 **NOTE:** The app is currently deployed on Google Cloud Run. If you'd like to run the app locally or reproduce the setup, follow the instructions below.
 
-### 🔗 Live App (Cloud Run)
+### Live App (Cloud Run)
 [Click here to launch the app]([https://your-cloud-run-url.com](https://shiny-app-594837701038.us-west1.run.app/))
 
 ---
 
-## 🧪 Running the App Locally / Reproducing the Project
+## Running the App Locally / Reproducing the Project
 
 You can run this app locally in two ways:  
 1. Using **Python Shiny + virtual environment** (ideal for development)  
@@ -48,5 +48,7 @@ Once the app is running, open your browser and visit:
 http://localhost:8000
 
 To stop and clean up:
-```bashdocker-compose down```
+```bash
+docker-compose down
+```
 
