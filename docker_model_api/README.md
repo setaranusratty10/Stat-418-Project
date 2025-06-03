@@ -15,6 +15,8 @@ curl -X POST https://model-app-594837701038.us-west1.run.app/recommend \
     "k": 5
   }'
 
+note you can add any title or k that you want this is just an example
+
 To have a cleaner output can run:
 curl -s -X POST https://model-app-594837701038.us-west1.run.app/recommend \
   -H "Content-Type: application/json" \
