@@ -26,6 +26,7 @@ To stop and clean up:
 docker-compose down
 ```
 Example output:
+
 <img width="562" alt="image" src="https://github.com/user-attachments/assets/c1e001f0-7ddd-4ebc-935e-53d168416bec" />
 
 
