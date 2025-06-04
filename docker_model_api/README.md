@@ -1,12 +1,7 @@
 ## Accessing Flask API
-### Docker Compose
+### Deployed Through Google Cloud Run
+
 ```bash
-# Step 1: Navigate to the app directory
-cd Stat-418-Project/docker_model_api
-
-# Step 2: Start the container
-docker-compose up -d
-
 Basic Request Run:
 curl -X POST https://model-app-594837701038.us-west1.run.app/recommend \
   -H "Content-Type: application/json" \
@@ -30,3 +25,7 @@ may need to install jq with: brew install jq (on macOS)
 To stop and clean up:
 docker-compose down
 ```
+Example output:
+<img width="562" alt="image" src="https://github.com/user-attachments/assets/c1e001f0-7ddd-4ebc-935e-53d168416bec" />
+
+
