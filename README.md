@@ -43,17 +43,17 @@ The core of the recommendation system relies on a K-Nearest Neighbors (KNN) mode
 | Publication Age  | Numeric   | Log Transformation    |
 | Average Rating   | Numeric   | Used As-Is            |
 
-When inputting a book in the model in this case we can use the book "The Hunger Games", we see the output of the KNN model and that it provides a similarity score.
+When inputting a book in the model in this case we can use the book "The Hunger Games", we see the output of the KNN model. 
 
 ### 📖 Sample Recommendation Output
 
-| Rank | Title                                 | Author           | Avg Rating | Similarity Score |
+| Rank | Title                                 | Author           | Avg Rating | URL |
 |------|----------------------------------------|------------------|------------|------------------|
-| 1    | Harry Potter and the Chamber of Secrets | J.K. Rowling     | 4.43       | 0.993281         |
-| 2    | Harry Potter and the Prisoner of Azkaban | J.K. Rowling     | 4.58       | 0.964469         |
-| 3    | Harry Potter and the Half-Blood Prince  | J.K. Rowling     | 4.58       | 0.866167         |
-| 4    | Harry Potter and the Goblet of Fire     | J.K. Rowling     | 4.57       | 0.847039         |
-| 5    | Catching Fire                           | Suzanne Collins  | 4.34       | 0.838153         |
+| 1    | Mockingjay                             | Suzanne Collins | 4.11        | https://www.goodreads.com/book/show/7260188mockingjay         |
+| 2    | Catching Fire                          | Suzanne Collins | 4.34        | https://www.goodreads.com/book/show/6148028-catching-fire         |
+| 3    | Harry Potter and the Sorcerer’s Stone  | J.K. Rowling     | 4.47       | https://www.goodreads.com/book/show/42844155-harry-potter-and-the-sorcerer-s-stone         |
+| 4    | Divergent     | Veronica Roth     | 4.14       | https://www.goodreads.com/book/show/13335037-divergent         |
+| 5    | Harry Potter and the Chamber of Secrets    | J.K. Rowling  | 4.43       | https://www.goodreads.com/book/show/15881.Harry_Potter_and_the_Chamber_of_Secrets        |
 
 ## Results & App Features
 When a user selects a book title, the app returns a ranked list of recommended books based on content similarity. For instance, choosing "The Hunger Games" as the input yields top matches such as "Mockingjay" and "Catching Fire", both by the same author and with similarly high average ratings. These results are calculated using cosine similarity on a combination of text-based and numeric features, with a similarity threshold ensuring only closely related books are returned. The example below shows similarity scores exceeding 0.8, indicating strong alignment in genre, style, and metadata.
