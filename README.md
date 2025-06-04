@@ -7,7 +7,7 @@ This app is a book recommendation engine built for readers looking to discover n
 
 The current version is trained on data scraped from the Goodreads ["Best Books Ever" List](https://www.goodreads.com/list/show/1.Best_Books_Ever?page=1) and uses a K-Nearest Neighbors (KNN) algorithm with cosine similarity to identify the most similar titles to a user-selected book. By converting text fields like genre and author into TF-IDF vectors, and applying log transformations to skewed numerical fields such as rating count, page count, and publication age, the model produces recommendations that are both relevant and personalized.
 
-This app demonstrates how a simple machine learning pipeline—paired with real-world data—can power a practical tool for readers. The final product is deployed as an interactive web app using R Shiny, containerized with Docker, and hosted on Google Cloud Run for public access.
+This app demonstrates how a simple machine learning pipeline—paired with real-world data—can power a practical tool for readers. The final product is deployed as an interactive web app using R Shiny, containerized with Docker, and hosted on Google Cloud Run for public access. Additionally, the model is built using a Flask-API and deployed on Google Cloud Run
 ## Exploratory Data Analysis
 Our data comes from the Goodreads ["Best Books Ever" List](https://www.goodreads.com/list/show/1.Best_Books_Ever?page=1) which contains 73,677 books. Selenium was utilizied to scrape the data and ended up scraping the top 2,000 books in the list with key features: Title, Author, Genres, Average Rating, Rating Count, Number of Pages, Year, and URL.
 However, looking at the numerical features, many were skewed which required log transformations as shown here:
